@@ -99,7 +99,7 @@ class Tareas():
                     logica = True
                     break 
                 elif self.es_predecesor(Tj,Ti) == True:
-                    lista1 = lista1.insert(indexi, Tj)
+                    lista1.insert(indexi, Tj)
                     logica = True
                     break
 
