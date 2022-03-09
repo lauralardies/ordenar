@@ -1,0 +1,74 @@
+<mxfile host="65bd71144e">
+    <diagram id="9kGIiVZaNE9ObgGzZpRs" name="Dicotomía">
+        <mxGraphModel dx="674" dy="396" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
+            <root>
+                <mxCell id="0"/>
+                <mxCell id="1" parent="0"/>
+                <mxCell id="frt8TX6_CJthdEtH1g2t-1" value="Dicotomía" style="swimlane;" vertex="1" parent="1">
+                    <mxGeometry x="250" y="110" width="200" height="140" as="geometry"/>
+                </mxCell>
+                <mxCell id="frt8TX6_CJthdEtH1g2t-2" value="fin = 1 Número&lt;br&gt;tabla = 1 Tabla&lt;br&gt;tablaordenada = 1 Tabla" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;" vertex="1" parent="frt8TX6_CJthdEtH1g2t-1">
+                    <mxGeometry x="30" y="30" width="140" height="50" as="geometry"/>
+                </mxCell>
+                <mxCell id="frt8TX6_CJthdEtH1g2t-4" value="bubbleSort()&lt;br&gt;insercion()" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;" vertex="1" parent="frt8TX6_CJthdEtH1g2t-1">
+                    <mxGeometry x="60" y="100" width="80" height="30" as="geometry"/>
+                </mxCell>
+                <mxCell id="frt8TX6_CJthdEtH1g2t-3" value="" style="endArrow=none;html=1;" edge="1" parent="1">
+                    <mxGeometry width="50" height="50" relative="1" as="geometry">
+                        <mxPoint x="250" y="200" as="sourcePoint"/>
+                        <mxPoint x="450" y="200" as="targetPoint"/>
+                    </mxGeometry>
+                </mxCell>
+            </root>
+        </mxGraphModel>
+    </diagram>
+    <diagram id="mFc5V-5q0DhzAqDMGvQM" name="Tareas">
+        <mxGraphModel dx="674" dy="396" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
+            <root>
+                <mxCell id="5zzcN6qVRTHiVrl0T2Fi-0"/>
+                <mxCell id="5zzcN6qVRTHiVrl0T2Fi-1" parent="5zzcN6qVRTHiVrl0T2Fi-0"/>
+                <mxCell id="N3FXqNFwnlZ8jcLQ6OWQ-0" value="Tareas" style="swimlane;" vertex="1" parent="5zzcN6qVRTHiVrl0T2Fi-1">
+                    <mxGeometry x="250" y="110" width="200" height="120" as="geometry"/>
+                </mxCell>
+                <mxCell id="N3FXqNFwnlZ8jcLQ6OWQ-1" value="t = 1 Tabla&lt;br&gt;t_ordenadas = 1 Tabla" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;" vertex="1" parent="N3FXqNFwnlZ8jcLQ6OWQ-0">
+                    <mxGeometry x="35" y="30" width="130" height="30" as="geometry"/>
+                </mxCell>
+                <mxCell id="N3FXqNFwnlZ8jcLQ6OWQ-3" value="es_predecesor()&lt;br&gt;ordena_tareas()" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;" vertex="1" parent="N3FXqNFwnlZ8jcLQ6OWQ-0">
+                    <mxGeometry x="50" y="80" width="100" height="30" as="geometry"/>
+                </mxCell>
+                <mxCell id="N3FXqNFwnlZ8jcLQ6OWQ-2" value="" style="endArrow=none;html=1;" edge="1" parent="5zzcN6qVRTHiVrl0T2Fi-1">
+                    <mxGeometry width="50" height="50" relative="1" as="geometry">
+                        <mxPoint x="250" y="180" as="sourcePoint"/>
+                        <mxPoint x="450" y="180" as="targetPoint"/>
+                    </mxGeometry>
+                </mxCell>
+            </root>
+        </mxGraphModel>
+    </diagram>
+    <diagram id="4R8n6WwVRwgGr4Wq-y-2" name="Segmentos">
+        <mxGraphModel dx="674" dy="396" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
+            <root>
+                <mxCell id="E3NYplIAKu5FrAZp79Ym-0"/>
+                <mxCell id="E3NYplIAKu5FrAZp79Ym-1" parent="E3NYplIAKu5FrAZp79Ym-0"/>
+                <mxCell id="_DaeJ0q-nt6-UU9Nxu4u-0" value="Segmentos" style="swimlane;" vertex="1" parent="E3NYplIAKu5FrAZp79Ym-1">
+                    <mxGeometry x="250" y="110" width="200" height="150" as="geometry"/>
+                </mxCell>
+                <mxCell id="8OeecvnPNw2hVnAawOR6-0" value="t = 1 Tabla&lt;br&gt;NSegmentos = 1 Número&lt;br&gt;Segmentos = 1 Tabla&lt;br&gt;esvalido = 1 Booleano" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;" vertex="1" parent="_DaeJ0q-nt6-UU9Nxu4u-0">
+                    <mxGeometry x="25" y="30" width="150" height="60" as="geometry"/>
+                </mxCell>
+                <mxCell id="8OeecvnPNw2hVnAawOR6-2" value="introducirsegmentos()&lt;br&gt;esta_explorado()" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;" vertex="1" parent="_DaeJ0q-nt6-UU9Nxu4u-0">
+                    <mxGeometry x="35" y="110" width="130" height="30" as="geometry"/>
+                </mxCell>
+                <mxCell id="8OeecvnPNw2hVnAawOR6-1" value="" style="endArrow=none;html=1;" edge="1" parent="E3NYplIAKu5FrAZp79Ym-1">
+                    <mxGeometry width="50" height="50" relative="1" as="geometry">
+                        <mxPoint x="250" y="210" as="sourcePoint"/>
+                        <mxPoint x="450" y="210" as="targetPoint"/>
+                        <Array as="points">
+                            <mxPoint x="350" y="210"/>
+                        </Array>
+                    </mxGeometry>
+                </mxCell>
+            </root>
+        </mxGraphModel>
+    </diagram>
+</mxfile>
