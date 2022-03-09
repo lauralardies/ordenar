@@ -1,18 +1,5 @@
 # En este algoritmo trataremos las tareas que hay que realizar para limpiar tu habitación.
 
-# Algoritmo para unir dos listas (o sublistas) sobre la lista 1, es decir, la lista 1 contendrá el resultado. 
-# Recorre todos los elementos Tj de la lista 2. Luego haces otro recorre todos los elementos Ti de la lista 1.
-#   Si Ti = Tj entonces pass y busca el siguiente elemento Tj en lista 2.
-#   Si Tj es predecesor de Ti entonces insertar Tj en la posición de Ti - 1 en la lista 1.
-#   Si he recorrido lista 1 completa y todavía hay elementos sin estudiar en lista 2, añadirlos al final de la lista 1.
-
-# Algoritmo crear sublistas (2 tareas dependientes):
-# for Ti en lista de Tareas
-#     for Tj en lista de Tareas
-#         si (Ti!= Tj & Ti es predecesora de Tj)
-#                CreaSublista (Ti,Tj)
-
-# Algoritmo es_predecesor: Las restricciones que indica el orden de las tareas.
 import random
 
 class Tareas():
