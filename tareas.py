@@ -13,6 +13,7 @@
 #                CreaSublista (Ti,Tj)
 
 # Algoritmo es_predecesor: Las restricciones que indica el orden de las tareas.
+import random
 
 class Tareas():
 
@@ -27,13 +28,9 @@ class Tareas():
         self.t.append("Limpiar el polvo")
         self.t.append("Ordenar la ropa")
         self.t.append("Ordenar los zapatos")
+        random.shuffle(self.t)
 
-        self.sublistas=[]
-        self.nsublistas =0
-
-    def __str__(self) -> str:
-        
-        return str(self.t)
+        self.t_ordenadas = []
 
     def es_predecesor(self, Ti, Tj):
     # True si Ti es predecesor de Tj, es decir, Ti se ejecuta antes que Tj.
@@ -71,50 +68,17 @@ class Tareas():
         elif Tj == "Ordenar los zapatos":
             return False
 
-    def crear_sublistas(self):
-        for Ti in self.t:
-            for Tj in self.t:
-                if Ti != Tj and self.es_predecesor(Ti, Tj) == True:
-                    par = [Ti,Tj]
-                    self.sublistas.append(par)
-                    self.nsublistas = self.nsublistas + 1
-
-    def imprimir_sublistas (self):
-        for i in range (0,self.nsublistas):
-            print (self.sublistas[i])
-
-    def unir_listas(self, i, j):
-
-        lista1 = self.sublistas[i]
-        lista2 = self.sublistas[j]
-
-        for indexj in range(0, len(lista2)):
-            Tj = lista2[indexj]
-            logica=False
-
-            for indexi in range(0, len(lista1)):
-                Ti = lista1[indexi]
-
-                if Ti==Tj:
-                    logica = True
-                    break 
-                elif self.es_predecesor(Tj,Ti) == True:
-                    lista1.insert(indexi, Tj)
-                    logica = True
+    def ordena_tareas (self):
+        for T in self.t:
+            # Vamos a valorar donde insertar la tarea T
+            done = False
+            # Recorremos la lista de tareas ordenadas en orden inverso 
+            for i in range (len(self.t_ordenadas)-1,-1,-1):
+                Ti= self.t_ordenadas[i]
+                if self.es_predecesor(Ti, T):
+                    self.t_ordenadas.insert(i+1,T)
+                    done = True
                     break
-
-            if logica == False:
-                lista1.append(Tj)
-
-    def unir_todas_listas(self):
-        for i in range (1, self.nsublistas):
-            self.unir_listas(0, i)
-
-clase = Tareas()
-decision = clase.es_predecesor("Hacer la cama", "Barrer")
-print(decision)
-clase.crear_sublistas()
-clase.imprimir_sublistas()
-print ("**********")
-clase.unir_todas_listas()
-clase.imprimir_sublistas()
+            # Si no tiene dependencias, lo insertamos al principio de la lista
+            if done == False:
+                self.t_ordenadas.insert(0,T)
